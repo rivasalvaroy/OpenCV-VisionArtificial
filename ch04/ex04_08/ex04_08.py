@@ -32,7 +32,7 @@ def run():
     cv2.putText(img, 'Isabel', (posicion_x, posicion_y),
                 fuente, escala, color, grosor)
     cv2.imshow('cuadro', img)
-    cv2.createTrackbar('Escala texto', 'cuadro', 2, 5, actualizar_imagen)
+    cv2.createTrackbar('Escala texto', 'cuadro', escala, 5, actualizar_imagen)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
