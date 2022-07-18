@@ -15,7 +15,7 @@ def run():
     alto_imagen, ancho_imagen, canales = img.shape
 
     posicion_x = int((ancho_imagen - ancho_texto)/2)
-    posicion_y = int(alto_imagen/2 - alto_texto/2)
+    posicion_y = int(alto_imagen/2 + alto_texto/2)
 
     cv2.putText(img, 'Isabel', (posicion_x, posicion_y),
                 fuente, escala, color, grosor)
